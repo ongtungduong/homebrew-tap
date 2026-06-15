@@ -5,21 +5,21 @@
 class Rar2zip < Formula
   desc "Convert RAR archives to ZIP — pure-Go, no unrar required"
   homepage "https://github.com/ongtungduong/rar2zip"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ongtungduong/rar2zip/releases/download/v0.1.0/rar2zip_darwin_amd64.tar.gz"
-      sha256 "8ba247c0354459b3221fa681c3cb425dadbd5314b7f6264d40a466e04fc34fa1"
+      url "https://github.com/ongtungduong/rar2zip/releases/download/v0.2.0/rar2zip_darwin_amd64.tar.gz"
+      sha256 "9ce4967e21cd1efd5d3693b513c802393df70e989e33db9837ff23f82a2a790b"
 
       define_method(:install) do
         bin.install "rar2zip"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ongtungduong/rar2zip/releases/download/v0.1.0/rar2zip_darwin_arm64.tar.gz"
-      sha256 "025c197a94687a32eab1b2167ba606146ddd20f4db7d3a8b0f80ac1272f251f8"
+      url "https://github.com/ongtungduong/rar2zip/releases/download/v0.2.0/rar2zip_darwin_arm64.tar.gz"
+      sha256 "189d1b2fbecd158525a9cda33fc8f38965a04c90dc4323472e7b2ebce278f347"
 
       define_method(:install) do
         bin.install "rar2zip"
@@ -29,15 +29,15 @@ class Rar2zip < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ongtungduong/rar2zip/releases/download/v0.1.0/rar2zip_linux_amd64.tar.gz"
-      sha256 "add85b221440d177e4cddacd969df6ffde2c79ff79b9c88c54d4486a45047331"
+      url "https://github.com/ongtungduong/rar2zip/releases/download/v0.2.0/rar2zip_linux_amd64.tar.gz"
+      sha256 "139cedc73e618da4262f837e5e662ae6586c46ea92b0979c95bdb0746008070e"
       define_method(:install) do
         bin.install "rar2zip"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ongtungduong/rar2zip/releases/download/v0.1.0/rar2zip_linux_arm64.tar.gz"
-      sha256 "6f9b584f0dad2c8b3be889459b6ed84255914a4b7e0fe4cc6623eb6ad9d36bc8"
+      url "https://github.com/ongtungduong/rar2zip/releases/download/v0.2.0/rar2zip_linux_arm64.tar.gz"
+      sha256 "db46c0ae7714fe722ec45536f663199f978200a200d2936c1e423f632d9fc181"
       define_method(:install) do
         bin.install "rar2zip"
       end
