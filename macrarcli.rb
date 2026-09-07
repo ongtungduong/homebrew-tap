@@ -5,21 +5,21 @@
 class Macrarcli < Formula
   desc "Extract RAR archives directly — pure-Go, no unrar required"
   homepage "https://github.com/ongtungduong/macrarcli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ongtungduong/macrarcli/releases/download/v0.3.0/macrarcli_darwin_amd64.tar.gz"
-      sha256 "202a60044222313ebd625d827776b0831cef5a690f74d64555246504d431efc2"
+      url "https://github.com/ongtungduong/macrarcli/releases/download/v0.4.0/macrarcli_darwin_amd64.tar.gz"
+      sha256 "fcf6e1227938109f119e98a7085b6667bb852faa844a117e10845c0e8e068b49"
 
       define_method(:install) do
         bin.install "macrarcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ongtungduong/macrarcli/releases/download/v0.3.0/macrarcli_darwin_arm64.tar.gz"
-      sha256 "baa6bb26a12170fe0be93f5c986f0d15bdb6d71aabbe30424166f2347cf3e5db"
+      url "https://github.com/ongtungduong/macrarcli/releases/download/v0.4.0/macrarcli_darwin_arm64.tar.gz"
+      sha256 "a15066a705f9e873cbb449f136904bd3dfacaddf4d9ceebc97658c2bc48c5a40"
 
       define_method(:install) do
         bin.install "macrarcli"
@@ -29,15 +29,15 @@ class Macrarcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ongtungduong/macrarcli/releases/download/v0.3.0/macrarcli_linux_amd64.tar.gz"
-      sha256 "a591d87b3c0ec3c36b89f24ba64ea0ecdfbf357efe0ad1167b55e0d2ce17a45e"
+      url "https://github.com/ongtungduong/macrarcli/releases/download/v0.4.0/macrarcli_linux_amd64.tar.gz"
+      sha256 "06f94f0846165ff57d5fcf6bb12f76190949dec8bfa2d9e1cea11209a6a9be49"
       define_method(:install) do
         bin.install "macrarcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ongtungduong/macrarcli/releases/download/v0.3.0/macrarcli_linux_arm64.tar.gz"
-      sha256 "dedf495de8682955b9364cb7904522aab9ecc383bf192f51d8fb2ef54cf07bad"
+      url "https://github.com/ongtungduong/macrarcli/releases/download/v0.4.0/macrarcli_linux_arm64.tar.gz"
+      sha256 "b03ab6bb557c2986b74834f6f86da496369dcb06c38f87efbcc4729d4f40e3c8"
       define_method(:install) do
         bin.install "macrarcli"
       end
